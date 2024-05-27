@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs") %>
+<section>
+        <div class="blog_contain">
+            <div id="l">
+                <h1>Enter your Details as <span style="color: chocolate;">mentioned👉</span></h1>
+            </div>
+            <div id="r">
+                <form action="/add_blog" method="post">
+                    <input type="text" name="uname" placeholder="Enter your user name ">
+                    <input type="text" name="title" placeholder="Enter title for your blog ">
+                    <textarea name="blog" rows="15" cols="50">Start writing you blog...</textarea>
+                    <div class="buttons">
+                        <button type="submit">Create Blog</button>
+                        <a id="explore_link" href="/explore">Explore other Blogs</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+</section>
+<%- include("partials/footer.ejs") %>
